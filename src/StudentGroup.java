@@ -14,7 +14,6 @@ import java.util.Date;
 public class StudentGroup implements StudentArrayOperation {
 
 	private Student[] students;
-	private Student s;
 	
 	/**
 	 * DO NOT remove or change this constructor, it will be used during task check
@@ -45,8 +44,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
-		s.setFullName(student.getFullName());
-		s.setId(index);
+		this.students[index]=student;
 	}
 
 	@Override
@@ -54,7 +52,7 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		if(student!=null)
 		{
-			addFirst(student);
+			student=student;
 		}
 		else
 		{
@@ -70,19 +68,16 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void add(Student student, int index) {
 		// Add your implementation here
-		
 	}
 
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
-		
 	}
 
 	@Override
 	public void remove(Student student) {
 		// Add your implementation here
-		
 	}
 
 	@Override
@@ -113,8 +108,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
-		
-		return students;
+		return null;
 	}
 
 	@Override
