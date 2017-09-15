@@ -63,41 +63,58 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addLast(Student student) {
 		// Add your implementation here
+		student=student;
 	}
 
 	@Override
 	public void add(Student student, int index) {
 		// Add your implementation here
+		students[index]=student;
 	}
 
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
+		students[index]=null;
 	}
 
 	@Override
 	public void remove(Student student) {
 		// Add your implementation here
+		if(student.compareTo(student)==0)
+		{
+			student=null;
+		}
 	}
 
 	@Override
 	public void removeFromIndex(int index) {
 		// Add your implementation here
+		students[index]=null;
 	}
 
 	@Override
 	public void removeFromElement(Student student) {
 		// Add your implementation here
+		if(student.compareTo(student)==0)
+		{
+			student=null;
+		}
 	}
 
 	@Override
 	public void removeToIndex(int index) {
 		// Add your implementation here
+		students[index]=null;
 	}
 
 	@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
+		if(student.compareTo(student)==0)
+		{
+			student=null;
+		}
 	}
 
 	@Override
